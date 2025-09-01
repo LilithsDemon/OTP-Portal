@@ -39,7 +39,7 @@ $(document).ready(function() {
         $('main').load('./php/components/dashboard.php');
     });
 
-    $('#otp_guide').click(function(){
-        $('main').load('./php/components/otp_guide.php');
+    $('#documents').click(function(){
+        $('main').load('./php/components/documents.php');
     });
 });

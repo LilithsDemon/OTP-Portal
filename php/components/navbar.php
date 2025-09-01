@@ -21,9 +21,9 @@
                     <i class='bx bx-notepad nav_icon'> </i>
                     <span class="nav_name">Inventory</span>
                 </a>
-                <a id="otp_guide" href="#" class="nav_link">
-                    <i class='bx bx-message-square-detail nav_icon'></i>
-                    <span class="nav_name">OTP Guide</span>
+                <a id="documents" href="#" class="nav_link">
+                    <i class='bx bx-folder nav_icon'></i>
+                    <span class="nav_name">Documents</span>
                 </a>
                 <a href="#" class="nav_link" data-bs-toggle="modal" data-bs-target="#settings_modal">
                     <i class='bx bx-cog nav_icon'></i>

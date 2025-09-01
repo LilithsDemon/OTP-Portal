@@ -6,6 +6,5 @@ require_once('/var/www/html/php/include/_connect.php');
 include_once('/var/www/html/php/include/_execute.php');
 require_once('/var/www/html/php/include/_bdie.php');
 ?>
-<div class = "dashboard d-flex flex-column overflow-scroll w-75">
-    
-</div>
+
+<h1 class="text-center">Dashboard</h1>
