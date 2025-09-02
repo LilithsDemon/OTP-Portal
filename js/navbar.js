@@ -39,6 +39,18 @@ $(document).ready(function() {
         $('main').load('./php/components/dashboard.php');
     });
 
+    $('#card_reader').click(function(){
+        $('main').load('./php/components/card_reader.php');
+    });
+
+    $('#checklists').click(function(){
+        $('main').load('./php/components/checklists.php');
+    });
+
+    $('#inventory').click(function(){
+        $('main').load('./php/components/inventory.php');
+    });
+
     $('#documents').click(function(){
         $('main').load('./php/components/documents.php');
     });
