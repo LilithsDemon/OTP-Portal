@@ -1,0 +1,12 @@
+#inventory_top_bar .btn {
+    border: none;
+    padding: 0.75rem 0.75rem;
+}
+
+#inventory_top_bar i {
+    font-size: 1.5rem;
+}
+
+#inventory_top_bar .active {
+    background-color: var(--accent-color);
+}

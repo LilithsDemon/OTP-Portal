@@ -1,5 +1,22 @@
 <script src="./js/documents.js"></script>
 <?php 
+  /*
+      Documents Page
+      - This page provides access to various important documents related to the OTP system.
+      - Users can view documents such as the OTP Reference Guide, Card Reader Tracking Sheet, and various check condition cards.
+      - Each document is accessible via a button that opens a modal displaying the PDF when clicked.
+      
+      - As there are currently limited files I see no need to pull these from a database, however if the number of documents increases in the future this may be a better solution.
+      - On top of this it might be worth adding a search function if the number of documents increases.
+      - This search function could also add filters and pagination if the number of documents increases significantly.
+  */
+
+
+      
+  // @summary This function generates a button that, when clicked, opens a modal to display a given PDF document.
+  // @param string $cardTitle The title to be displayed on the button.
+  // @param string $cardText The descriptive text to be displayed on the button.
+  // @param string $pdfPath The file path to the PDF document to be displayed.
   function LoadDocumentButtons($cardTitle, $cardText, $pdfPath){
     ?>
       

@@ -10,7 +10,7 @@
             </a>
             <div class="nav_list">
                 <a id="dashboard" href="#" class="nav_link active">
-                    <i class='bx bx-grid-alt nav_icon'> </i>
+                    <i class='bx bx-grid nav_icon'> </i>
                     <span class="nav_name">Dashboard</span>
                 </a>
                 <a id="card_reader" href="#" class="nav_link">
@@ -18,11 +18,11 @@
                     <span class="nav_name">Card Reader SNs</span>
                 </a>
                 <a id="checklists" href="#" class="nav_link">
-                    <i class='bx bx-clipboard nav_icon'> </i> 
+                    <i class='bx bx-calendar-check nav_icon'> </i> 
                     <span class="nav_name">Checklists</span>
                 </a>
                 <a id="inventory" href="#" class="nav_link">
-                    <i class='bx bx-notepad nav_icon'> </i>
+                    <i class='bx bx-clipboard-detail nav_icon'> </i>
                     <span class="nav_name">Inventory</span>
                 </a>
                 <a id="documents" href="#" class="nav_link">
