@@ -7,10 +7,10 @@ $(document).ready(function() {
             success: function(response) {
                 $(`#${$item_id}_qty`).text(response);
             },
-            error: function() {
+            error: function(response) {
                 Swal.fire({
                     title: "Quantity Update Failed",
-                    text: data.responseText,
+                    text: response.responseText,
                     icon: "error",
                     heightAuto: false,
                 });
