@@ -17,7 +17,7 @@
 
         while($notes = mysqli_fetch_assoc($cable_notes_data))
         {
-            echo "<p>" . $notes['DATETIME'] . " - " . $notes['Notes'] . "</p>";
+            if($notes['Notes'] != "") echo "<p>" . $notes['DATETIME'] . " - " . $notes['Notes'] . "</p>";
         }
     }
     else if($type == 2)
@@ -29,7 +29,7 @@
 
         while($notes = mysqli_fetch_assoc($device_notes_data))
         {
-            echo "<p>" . $notes['DATETIME'] . " - " . $notes['Notes'] . "</p>";
+            if($notes['Notes'] != "") echo "<p>" . $notes['DATETIME'] . " - " . $notes['Notes'] . "</p>";
         }
     }
     else
