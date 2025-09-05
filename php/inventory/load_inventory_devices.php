@@ -38,8 +38,8 @@
                         echo "<td>" . $item_data['TypeName'] . "</td>";
                         echo "<td>" . $item_data['CurrentUsage'] . "</td>";
                         echo "<td>" . $item_data['PositionName'] . "</td>";
-                        echo "<td><button class='btn btn-primary btn-sm'><i class='bx bx-history'></i> </button></td>";
-                        echo "<td><button class='btn btn-primary btn-sm'><i class='bx bx-note-book'></i></button></td>";
+                        echo "<td id='" . $item_data['ItemID'] . "'><button class='history_btn btn btn-primary btn-sm'><i class='bx bx-history'></i> </button></td>";
+                        echo "<td id='" . $item_data['ItemID'] . "'><button class='notes_btn btn btn-primary btn-sm'><i class='bx bx-note-book'></i></button></td>";
                         echo "</tr>";
                     }
                 }
@@ -51,9 +51,9 @@
     }
 ?>
 
+<script src="./js/devices.js"></script>
 
-
-<table class="table table-striped table-hover">
+<table id="devices_table" class="table table-striped table-hover">
     <thead>
         <tr>
             <th scope="col">Device ID</th>
@@ -69,3 +69,16 @@
         <?php LoadTable(); ?>
     </tbody>
 </table>
+
+<div class="modal fade" id="notes_modal" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-xl modal-dialog-centered">
+    <div class="modal-content">
+      <div id="notes_modal_body" class="modal-body d-flex flex-column">
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>

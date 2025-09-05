@@ -1,7 +1,7 @@
 <?php
     include_once("/var/www/html/php/include/_bdie.php");
 
-    if(!isset($_POST['item_id']) || !isset($_POST['value'])) return DieWithStatus("Bad Request", 400);
+    if(!isset($_POST['item_id'], $_POST['value'])) return DieWithStatus("Bad Request", 400);
 
     include_once("/var/www/html/php/include/_execute.php");
 
