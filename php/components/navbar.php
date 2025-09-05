@@ -36,7 +36,7 @@
             </div>
         </div> 
         <a href="./php/logout.php" class="nav_link">
-        <i class='bx bx-log-out nav_icon'></i>
+        <i class='bx bx-arrow-out-right-square-half nav_icon'></i>
         <span class="nav_name">Sign Out</span> </a>
     </nav>
 </div>
