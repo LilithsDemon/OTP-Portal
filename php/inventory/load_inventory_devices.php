@@ -16,7 +16,9 @@
                 $item_id = $item['ItemID'];
 
                 // Now we have the ItemID we can get all of the data for that item
-                $get_all_item_data_sql = "SELECT `Device`.`ItemID`, `Device`.`SN`, `Items`.`ItemName`, `ItemType`.`TypeName`, `Device`.`CurrentUsage`, `Positions`.`PositionName`, `Device`.`DATETIME` FROM `Device`
+                $get_all_item_data_sql = "SELECT `Device`.`ItemID`, `DeviceSN`.`SN`, `Items`.`ItemName`, `ItemType`.`TypeName`, `Device`.`CurrentUsage`, `Positions`.`PositionName`, `Device`.`DATETIME` FROM `Device`
+                    LEFT JOIN `DeviceSN` ON
+                    `Device`.`ItemID` = `DeviceSN`.`ItemID`
                     LEFT JOIN `Positions` ON
                     `Device`.`PositionID` = `Positions`.`PositionID`
                     LEFT JOIN `Items` ON
