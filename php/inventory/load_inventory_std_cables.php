@@ -16,6 +16,7 @@
             echo "<td>" . $cable['ItemName'] . "</td>";
             echo "<td id='" . $cable['ItemID'] . "_qty'>" . $cable['Quantity'] . "</td>";
             echo "<td id='" . $cable['ItemID'] . "'><button class='decrease_qty_btn btn btn-primary btn-sm'><i class='bx bx-minus'></i> </button> <button class='increase_qty_btn btn btn-primary btn-sm'><i class='bx bx-plus'></i></button></td>";
+            echo "<td id='" . $cable['ItemID'] . "'><button class='edit_std_cable_btn btn btn-primary btn-sm'><i class='bx bx-edit'></i></button></td>";
             echo "</tr>";
         }
     }
@@ -31,6 +32,7 @@
             <th scope="col">Cable Type</th>
             <th scope="col">Quantity</th>
             <th scope="col">Change Current Quantity</th>
+            <th scope="col">Edit</th>
         </tr>
     </thead>
     <tbody>

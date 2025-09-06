@@ -43,6 +43,7 @@
                         echo "<td>" . $item_data['PositionName'] . "</td>";
                         echo "<td id='" . $item_data['ItemID'] . "'><button class='history_btn btn btn-primary btn-sm'><i class='bx bx-history'></i> </button></td>";
                         echo "<td id='" . $item_data['ItemID'] . "'><button class='notes_btn btn btn-primary btn-sm'><i class='bx bx-note-book'></i></button></td>";
+                        echo "<td id='" . $item_data['ItemID'] . "'><button class='edit_device_btn btn btn-primary btn-sm'><i class='bx bx-edit'></i></button></td>";
                         echo "</tr>";
                     }
                 }
@@ -67,6 +68,7 @@
             <th scope="col">Position</th>
             <th scope="col">History</th>
             <th scope="col">Notes</th>
+            <th scope="col">Edit</th>
         </tr>
     </thead>
     <tbody>
