@@ -17,4 +17,26 @@ $(document).ready(function() {
                 break;
         }
     });
+
+    $("main").on("change", '#item_type_select', function() {
+        var $selectedType = $(this).val();
+        var $additionalFieldsContainer = $('#additional_fields');
+
+        $.ajax({
+            url: './php/inventory/get_additional_fields.php',
+            type: 'POST',
+            data: { item_type: $selectedType },
+            success: function(response) {
+                $additionalFieldsContainer.html(response);
+            },
+            error: function(response) {
+                Swal.fire({
+                    title: "Load Required Fields Failed",
+                    text: response.responseText,
+                    icon: "error",
+                    heightAuto: false,
+                });
+            }
+        });
+    });
 });

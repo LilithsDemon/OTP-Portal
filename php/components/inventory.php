@@ -32,3 +32,31 @@
         <?php include("../inventory/load_inventory_std_cables.php") ?>
     </div>
 </div>
+
+<div class="modal fade" id="add_item_modal" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-xl modal-dialog-centered">
+    <div class="modal-content">
+      <div id="add_item_modal_body" class="modal-body d-flex flex-column">
+        <form>
+            <div class="mb-3">
+                <label for="item_name" class="form-label">Item Name</label>
+                <input type="text" class="form-control" id="item_name" required>
+            </div>
+            <div class="mb-3">
+                <label for="item_type" class="form-label">Item Type</label>
+                <select class="form-select" id="item_type_select" required>
+                    <option value="" disabled selected>Select Item Type</option>
+                    <option value="std_cable">Standard Cable</option>
+                    <option value="special_cable">Special Cable</option>
+                    <option value="device">Device</option>
+                </select>
+            </div>
+            <div id="additional_fields"></div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
