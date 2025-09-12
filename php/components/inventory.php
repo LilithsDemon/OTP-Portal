@@ -26,7 +26,7 @@
         <button data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Standard Cables" id="std_cables" class="type_btn btn btn-secondary rounded-circle active"><i class='bx bx-connector'></i></button>
         <button data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Special Cables" id="special_cables" class="type_btn btn btn-secondary rounded-circle"><i class='bx bx-hdmi'></i></button>
         <button data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Devices" id="devices" class="type_btn btn btn-secondary rounded-circle"><i class='bx bx-hard-drive'></i></button>
-        <button class="btn btn-primary" id="add_inventory_btn" data-bs-toggle="modal" data-bs-target="#add_inventory_modal">Add Item</button>
+        <button class="btn btn-primary" id="add_inventory_btn" data-bs-toggle="modal" data-bs-target="#add_item_modal">Add Item</button>
     </div>
     <div id="inventory_table_container" class="w-100 mt-4">
         <?php include("../inventory/load_inventory_std_cables.php") ?>
@@ -36,8 +36,11 @@
 <div class="modal fade" id="add_item_modal" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-scrollable modal-xl modal-dialog-centered">
     <div class="modal-content">
+      <div class="modal-header d-flex justify-content-center align-items-center">
+        <h5 class="modal-title text-center" id="staticBackdropLabel">Add Inventory Item</h5>
+      </div>
       <div id="add_item_modal_body" class="modal-body d-flex flex-column">
-        <form>
+        <form id="add_item_form" action="./test.php" type="POST">
             <div class="mb-3">
                 <label for="item_name" class="form-label">Item Name</label>
                 <input type="text" class="form-control" id="item_name" required>
@@ -56,6 +59,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="submit" form="add_item_form" id="submit_add_item" class="btn btn-primary">Add Item</button>
       </div>
     </div>
   </div>

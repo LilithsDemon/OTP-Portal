@@ -20,8 +20,21 @@
               "icon": "lucide-file",
               "title": "To-Do List"
             }
+          },
+          {
+            "id": "b5d6ffb1151e66dc",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.9.12"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.9.12"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
         "id": "57c13b371d24843b",
@@ -174,6 +187,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -182,7 +196,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7e7ca7c61774d65e",
+  "active": "b5d6ffb1151e66dc",
   "lastOpenFiles": [
     "To-Do List.md",
     "Welcome.md"
